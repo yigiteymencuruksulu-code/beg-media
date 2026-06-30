@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-light-bg: #FAF8F5; /* Beautiful slightly yellow ivory/alabaster */
+  --color-brand-cream: #F4EFEA;    /* Darker warm cream */
+  --color-brand-dark: #1A1916;     /* Deep warm charcoal */
+  --color-brand-gold: #C5A02B;     /* Refined gold accent */
+  --color-brand-accent: #4F46E5;   /* Indigo accent */
+}
+
+/* Custom smooth transitions and animations */
+body {
+  background-color: var(--color-brand-light-bg);
+  color: var(--color-brand-dark);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Elegant light-theme glassmorphism custom classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(26, 25, 22, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(26, 25, 22, 0.05);
+}
+
+.glass-panel-light {
+  background: rgba(244, 239, 234, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(26, 25, 22, 0.05);
+}
+
+.glow-indigo {
+  box-shadow: 0 0 40px -5px rgba(79, 70, 229, 0.1);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
